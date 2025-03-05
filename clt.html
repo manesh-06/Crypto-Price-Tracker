@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRYPTO LIVE TRACKER</title>
+        <link rel="stylesheet" href="clt.css">
+        <link rel="icon" href="cltlogo.webp">
+    </head>
+    
+    <body>
+        <h1 id="h1"><Strong>ABOUT</Strong></h1><br>
+       <section id="s1">
+        <p>Crypto Live Tracker provides real-time cryptocurrency price updates using API data. Users can enter the coin name (BTC, ETH, etc.) and get live price changes, 24-hour trends, and market insights in an interactive interface.</p><br>
+       </section>
+    
+        <h2 id="h2"><strong>CRYPTOCURRENCY AND ITS IMPACT</strong></h2>
+        <section id="s2">
+            <p>Cryptocurrency is a digital currency that operates on blockchain technology, ensuring secure and decentralized transactions without the need for banks or central authorities. Popular cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH) have revolutionized the financial industry by enabling fast, low-cost, and borderless payments.</p><br>
+            <p>While crypto provides financial inclusion and investment opportunities, it also comes with challenges such as price volatility, regulatory uncertainty, security risks, and environmental concerns due to high energy consumption. Despite these challenges, cryptocurrency continues to shape the future of digital finance and innovation.</p><br>
+        </section>
+    
+        <section id="s3">
+            <h3 id="h3"><strong>CRYPTO LIVE PRICE</strong></h3><br>
+            <label for="Crypto">Cryptocurrency:</label>
+            <input type="text" id="c" name="Crypto" placeholder="Enter crypto (e.g.: BTC, ETH, etc)"><br>
+    
+            <button id="button1" onclick="fetchprice()">GET PRICE</button>
+            <button id="button2" onclick="fetchchange()">24hr change</button>
+            <button id="button3" onclick="fetchhigh()">Highest price</button>
+            <button id="button4" onclick="fetchlow()">Lowest Price</button>
+            <button id="button5" onclick="fetchvolume()">Total Volume</button>
+        </section>
+
+        <section id="s4">
+            <p id="p1"></p>
+        </section>
+
+        <section id="s5">
+            <h3>TOP 5 CRYPTOCURRENCIES WITH THE MOST 24H CHANGE(%)</h3><br>
+            <button id="button6" onclick="top5()">Show Top 5</button>
+            <ul id="t5"></ul>
+        </section>
+        <script src="clt.js"></script>
+    </body>
+</html>
